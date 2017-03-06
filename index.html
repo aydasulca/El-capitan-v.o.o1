@@ -5,17 +5,83 @@
     <title></title>
   </head>
   <body>
+    <!--Dropdown-->
+    <div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">&#9776;</button>
+	<div id="myDropdown" class="dropdown-content">
+		<a href="#">Perfil</a>
+		<a href="#l">Salir</a>
+	</div>
+</div>
+<!--MAQUETA-->
     <div align="center"><img src="http://laboratoria.la/app/assets/img/logo_laboratoria-09.svg" width="500" height="500"></div>
     <section>
-      <h2>¿Qué es laboratoria?</h2>
-      <p>En Laboratoria identificamos jóvenes de bajos recursos con un potencial enorme y les damos la oportunidad de convertirse en desarrolladoras web. El resultado es una gran transformación para cada estudiante y una gran fuente de talento femenino de América Latina para el mundo tech.</p>
-      <h3>Temas</h3>
-      <input type="submit" value="Sprint 1" onclick="sprint1()">
-      <input type="submit" value="Sprint 2" onclick="sprint2()">
-      <input type="submit" value="Sprint 3" onclick="sprint3()">
-
-    </section>
-
-
+      <header>
+        <h2>¿Qué es laboratoria?</h2>
+        <p>En Laboratoria identificamos jóvenes de bajos recursos con un potencial enorme y les damos la oportunidad de convertirse en desarrolladoras web. El resultado es una gran transformación para cada estudiante y una gran fuente de talento femenino de América Latina para el mundo tech.</p>
+        <h3>Temas</h3>
+      </header>
+      <form>
+        <input type="button" value="Sprint 1" onclick="sprint1()">
+        <input type="button" value="Sprint 2" onclick="sprint()">
+        <input type="button" value="Sprint 3" onclick="sprint()">
+      <br/>
+      <!--datos sprint 1-->
+      <div id="text1" style="" display>
+        <h2>Sprint 1: Introducción a Javascript</h2>
+        <ul>
+          <li>1.Fundamentos de Programación</li>
+          <li>2.Funciones</li>
+          <li>3.Arreglos</li>
+          <li>4.Objetos</li>
+        </ul>
+        <hr>
+        <h2>Quiz</h2>
+        <h3>Existen dos tipos de funciones</h3>
+        <input type="button" id="1"> Expresadas y declaradas <br>
+        <input type="button" id="2"> Explicitas y declaradas <br>
+        <input type="button" id="3"> Expresadas y derivadas <br>
+        <br><h3>Elige una propirdad de los arreglos</h3>
+        <input type="button" name="" value=""> clear <br>
+        <input type="button" name="" value=""> pop <br>
+        <input type="button" name="" value=""> add <br>
+        <br><h3>Un objeto tiene ...... y ......</h3>
+        <input type="button" name="" value=""> numeros y letras <br>
+        <input type="button" name="" value=""> partes y validaciones <br>
+        <input type="button" name="" value=""> propiedades y valores <br>
+        <br><button type="button" name="button">Enviar</button>
+      </div>
+      <!--datos sprint 2-->
+      <div class="text" id="text2" display>
+        <h2>Sprint 2: Introducción al esarrollo web y construccion de paginas web</h2>
+        <ul>
+          <li>1.Ciclo de vida del desarrollo wed y arquitectura basica cliente/servidor/Configuracion al ambiente de trabajo e introduccion a git</li>
+          <li>2.HTML y Javascript en el navegador</li>
+          <li>3.Manejo de comandos basicos de git en la terminal</li>
+          <li>4.Pruebas unitarias</li>
+          <li>5.Git/Resolucion de conflictos/Braching model</li>
+          <li>6.DOM</li>
+        </ul>
+        <hr>
+        <h2>Quiz</h2>
+        <h3>¿Cual es el comando para iniciar un repositorio desde la consola?</h3>
+        <input type="button" id="1"> git init .<br>
+        <input type="button" id="2"> git init <br>
+        <input type="button" id="3"> git init add <br>
+        <br><h3>¿Cual es la finalidad de hacer una prueba unitaria?</h3>
+        <input type="button" name="" value=""> Comprobar que el codigo funcione correctamente <br>
+        <input type="button" name="" value=""> Darle valores a los parametros de dichas funciones <br>
+        <input type="button" name="" value=""> No tiene nigun fin <br>
+      <br><h3>¿Que significa DOM?</h3>
+        <input type="button" name="" value=""> Dual Object Model <br>
+        <input type="button" name="" value=""> Document Object Model <br>
+        <input type="button" name="" value=""> Document Obsolet Model <br>
+        <br><button type="button" name="button">Enviar</button>
+      </div>
+      </form>
+    <div id="datos"style="" >
+    </div>
+    <script src="assets/js/main.js" type="text/javascript">
+    </script>
   </body>
 </html>
